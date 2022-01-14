@@ -58,7 +58,7 @@ const Form = (props) => {
     const handleFirstName = (e) => {
         console.log(e.target.value);
         setFirstName(e.target.value);
-        if (e.target.value == "") {
+        if (e.target.value === "") {
             setFirstNameError("");
         }
         else if (e.target.value.length <2) {
@@ -74,7 +74,7 @@ const Form = (props) => {
     const handleLastName = (e) => {
         console.log(e.target.value);
         setLastName(e.target.value);
-        if (e.target.value == "") {
+        if (e.target.value === "") {
             setLastNameError("");
         }
         else if(e.target.value.length < 2){
@@ -90,7 +90,7 @@ const Form = (props) => {
     const handleEmail = (e) => {
         console.log(e.target.value);
         setEmail(e.target.value);
-        if (e.target.value == "") {
+        if (e.target.value === "") {
             setEmailError("");
         }
         else if (e.target.value.length < 2) {
@@ -105,7 +105,7 @@ const Form = (props) => {
     const handlePassword = (e) => {
         console.log(e.target.value);
         setPassword(e.target.value);
-        if (e.target.value == "") {
+        if (e.target.value === "") {
             setPasswordError("");
         }
         else if(e.target.value.length < 1){
@@ -121,10 +121,10 @@ const Form = (props) => {
     const handleConfirmPassword = (e) => {
         console.log(e.target.value);
         setConfirmPassword(e.target.value);
-        if (e.target.value == "") {
+        if (e.target.value === "") {
             setConfirmPasswordError("");
         }
-        else if(e.target.value != Password) {
+        else if(e.target.value !== Password) {
             setConfirmPasswordError("Passwords must match");
         }
         else {
